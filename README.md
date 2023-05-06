@@ -14,7 +14,7 @@ We can control this device using a software. which is given with its screen shot
 # Hardware Design:
 To create my high voltage programming device, I started with an Arduino Uno board. The Arduino board is connected to an external high voltage programming circuit, which includes a DC-DC converter, Two IC sockets are required for the 8 pin(AT-tiny) and 28 pin(AT-Mega328P-PU) microcontrollers, and some resistors and capacitors. The DC-DC converter is used to generate the high voltage signal required for HVP. The IC socket allows for easy insertion and removal of the microcontroller being programmed. The resistors and capacitors are used to filter and regulate the high voltage signal.
 </br><img src="https://github.com/shuvabratadey/Arduino-HV_Programmer/blob/main/Arduino-HV-Programmer-photos/IMG_1.jpg" width="500"/>
-</br><img src="https://github.com/shuvabratadey/Arduino-HV_Programmer/blob/main/Arduino-HV-Programmer-photos/IMG_2.jpg" width="500"/>
+<img src="https://github.com/shuvabratadey/Arduino-HV_Programmer/blob/main/Arduino-HV-Programmer-photos/IMG_2.jpg" width="500"/>
 
 # Software Design:
 To control the Arduino board and trigger the HVP process, I developed a software application using Visual Studio. The program was written in C# and used the Serial library to communicate with the Arduino board via a serial connection. The program sends the appropriate commands and data to the Arduino board to trigger the HVP process. This includes setting the programming mode, sending the high voltage signals, and programming the microcontroller.
