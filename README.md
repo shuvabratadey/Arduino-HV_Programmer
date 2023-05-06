@@ -16,3 +16,15 @@ We can control this device using a software. which is given with its screen shot
 ![Second Image](https://github.com/shuvabratadey/Arduino-HV_Programmer/blob/main/Arduino-HV-Programmer-photos/IMG_2.jpg)
 # Software Screen Shot
 ![Third Image](https://github.com/shuvabratadey/Arduino-HV_Programmer/blob/main/image.png)
+
+Hardware Design:
+To create my high voltage programming device, I started with an Arduino Uno board. The Arduino board is connected to an external high voltage programming circuit, which includes a DC-DC converter, Two IC sockets are required for the 8 pin(AT-tiny) and 28 pin(AT-Mega328P-PU) microcontrollers, and some resistors and capacitors. The DC-DC converter is used to generate the high voltage signal required for HVP. The IC socket allows for easy insertion and removal of the microcontroller being programmed. The resistors and capacitors are used to filter and regulate the high voltage signal.
+
+Software Design:
+To control the Arduino board and trigger the HVP process, I developed a software application using Visual Studio. The program was written in C# and used the Serial library to communicate with the Arduino board via a serial connection. The program sends the appropriate commands and data to the Arduino board to trigger the HVP process. This includes setting the programming mode, sending the high voltage signals, and programming the microcontroller.
+
+Safety Considerations:
+It's important to note that implementing HVP requires additional hardware and careful attention to safety, as it involves high voltage signals. Therefore, I took the necessary precautions when designing and implementing the HVP circuitry and programming process. This includes using proper insulation, ensuring that the high voltage source is well isolated from other components, and wearing appropriate protective equipment when handling the circuitry.
+
+Conclusion:
+In conclusion, My High Voltage Programming Device is an Arduino-based device that allows for programming of microcontrollers using HVP. The device is controlled by a software application developed using Visual Studio, which sends the appropriate commands and data to the Arduino board to trigger the HVP process. While implementing HVP requires additional hardware and safety considerations, it can be a useful method for programming microcontrollers and other electronic devices that require HVP.
